@@ -6,5 +6,10 @@ import unittest
 class TestPageRankSanity(unittest.TestCase):
 
 	def test_object_creation(self):
-		
+		test = PageRank('http://github.com/')
+		print type(test)
+
+
+if __name__ == '__main__':
+	unittest.main()
 	
