@@ -28,5 +28,4 @@ class Utilities:
 		finally: 
 			pass
 
-	def function():
-		pass
+	
