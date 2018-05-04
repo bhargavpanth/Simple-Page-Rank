@@ -14,6 +14,7 @@ class TestUtilities(unittest.TestCase):
 		r'(?::\d+)?' # optional port
 		r'(?:/?|[/?]\S+)$', re.IGNORECASE)
 
+
 	def test_valid_url(self):
 		'''
 		returns if the URL is valid
