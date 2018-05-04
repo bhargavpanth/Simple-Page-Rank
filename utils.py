@@ -27,7 +27,7 @@ class Utilities:
 		finally:
 			pass
 
-"""
+'''
 def main():
 	test = Utilities()
 	resp = test.parse_content('http://github.com')
@@ -35,5 +35,4 @@ def main():
 
 if __name__ == '__main__':
 	main()
-"""
-	
+'''
