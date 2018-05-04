@@ -1,12 +1,10 @@
 import unittest
-import urllib
 import re
 
 class TestUtilities(unittest.TestCase):
 	"""
 	docstring for TestUtilities
 	"""
-
 	def __init__(self):
 		self.url_regex = re.compile(
 		r'^(?:http|ftp)s?://' # http:// or https://
@@ -16,18 +14,19 @@ class TestUtilities(unittest.TestCase):
 		r'(?::\d+)?' # optional port
 		r'(?:/?|[/?]\S+)$', re.IGNORECASE)
 
-	def test_valid_url(self, url):
+	def test_valid_url(self):
 		'''
 		returns if the URL is valid
 		'''
+		url = "http://test.com"
 		match_status = re.match(self.url_regex, url) is not None
-		self.assertEqual()
+		self.assertEqual(True, match_status)
 
-	def test_request(self, url):
-		pass
+	# def test_status_code(self, content):
+	# 	pass
 
-	def test_status_code(self, content):
-		pass
+	# def test_find_outgoing_urls(self):
+	# 	pass
 
 if __name__ == '__main__':
 	unittest.main()
