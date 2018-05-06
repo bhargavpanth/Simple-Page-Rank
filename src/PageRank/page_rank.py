@@ -6,14 +6,16 @@ from utils import Utilities
 
 class PageRank:
 
-	"""docstring for PageRank"""
+	"""
+	PageRank - class to calulate set of page ranks given a seed URL
+	"""
 	
 	def __init__(self, url):
 		self.url = url
 
 	# request for a URL parse contents from the response
 	def get_document_content(self):
-		Utilities.parse_content("https://github.com")
+		print Utilities.parse_content("https://github.com")
 		pass
 
 
