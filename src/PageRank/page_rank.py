@@ -1,7 +1,7 @@
 import urllib
 from bs4 import BeautifulSoup
 import sys
-sys.path.append('../../utils')
+# sys.path.append('./utils.py')
 from utils import Utilities
 
 class PageRank:
